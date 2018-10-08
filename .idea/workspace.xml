@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fb0bb898-203d-4c18-8223-36664f6d1eb5" name="Default Changelist" comment="" />
+    <list default="true" id="fb0bb898-203d-4c18-8223-36664f6d1eb5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/KataWebTdd/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/KataWebTdd/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/KataWebTdd/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/KataWebTdd/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Website/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Website/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -9,8 +13,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/KataWebTdd$Unittests_in_Functional_test_py.coverage" NAME="Unittests in Functional_test.py Coverage Results" MODIFIED="1538956224408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Website" />
     <SUITE FILE_PATH="coverage/BuscoAyuda$Unittests_in_Functional_test_py.coverage" NAME="Unittests in Functional_test.py Coverage Results" MODIFIED="1538957189416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Website" />
+    <SUITE FILE_PATH="coverage/BuscoAyudo$Functional_test.coverage" NAME="Functional_test Coverage Results" MODIFIED="1538958680036" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Website" />
+    <SUITE FILE_PATH="coverage/KataWebTdd$Unittests_in_Functional_test_py.coverage" NAME="Unittests in Functional_test.py Coverage Results" MODIFIED="1538956224408" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Website" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-377841412">
@@ -41,18 +46,23 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-900217579">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Website/Functional_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="56" lean-forward="true" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-              <folding>
-                <element signature="e#1#30#0" expanded="true" />
-                <marker date="1538956520590" expanded="true" signature="94:99" ph="..." />
-              </folding>
+            <state relative-caret-position="170">
+              <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
             </state>
           </provider>
         </entry>
@@ -65,6 +75,9 @@
         <option value="Python Script" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -80,11 +93,29 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1868" />
-    <option name="y" value="-17" />
-    <option name="width" value="1366" />
-    <option name="height" value="735" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State />
+          <State>
+            <id>Python</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>PyInterpreterInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -94,12 +125,12 @@
         <subPane>
           <expand>
             <path>
-              <item name="KataWebTdd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KataWebTdd" type="462c0819:PsiDirectoryNode" />
+              <item name="BuscoAyudo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BuscoAyudo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="KataWebTdd" type="b2602c69:ProjectViewProjectNode" />
-              <item name="KataWebTdd" type="462c0819:PsiDirectoryNode" />
+              <item name="BuscoAyudo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BuscoAyudo" type="462c0819:PsiDirectoryNode" />
               <item name="Website" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -128,7 +159,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in Functional_test.py">
+  <component name="RunManager" selected="Python.Functional_test">
+    <configuration name="Functional_test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="KataWebTdd" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\espin\venv7\Scripts\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Website" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Website/Functional_test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="KataWebTdd" type="Python.DjangoServer" factoryName="Django server">
       <module name="KataWebTdd" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,9 +223,11 @@
     <list>
       <item itemvalue="Django server.KataWebTdd" />
       <item itemvalue="Python tests.Unittests in Functional_test.py" />
+      <item itemvalue="Python.Functional_test" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.Functional_test" />
         <item itemvalue="Python tests.Unittests in Functional_test.py" />
       </list>
     </recent_temporary>
@@ -205,32 +260,32 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1358" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25075987" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2549168" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="R Packages" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="R Graphics" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3289689" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="R Graphics" order="4" />
+      <window_info anchor="right" id="R Packages" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -266,12 +321,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Website/Functional_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="56" lean-forward="true" selection-start-line="13" selection-start-column="56" selection-end-line="13" selection-end-column="56" />
-          <folding>
-            <element signature="e#1#30#0" expanded="true" />
-            <marker date="1538956520590" expanded="true" signature="94:99" ph="..." />
-          </folding>
+        <state relative-caret-position="170">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
         </state>
       </provider>
     </entry>
