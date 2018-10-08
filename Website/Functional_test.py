@@ -31,8 +31,8 @@ class FunctionalTest(unittest.TestCase):
 
         #self.browser.find_element_by_xpath(
         #    "//select[@id='id_tiposDeServicio']/option[text()='Desarrollador Web']").click()
-        #telefono = self.browser.find_element_by_id('id_telefono')
-        #telefono.send_keys('3173024578')
+        telefono = self.browser.find_element_by_id('id_telefono')
+        telefono.send_keys('3173024578')
 
         correo = self.browser.find_element_by_id('id_correo')
         correo.send_keys('jd.patino1@uniandes.edu.co')

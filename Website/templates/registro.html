@@ -15,7 +15,9 @@
 <div class="container">
     {% csrf_token %}
     {{form}}
-    <button type="submit" class="btn btn-primary">Submit</button>
+    {{user_form}}
+    <button id="id_grabar" type="submit" class="btn btn-primary">Submit</button>
+
 </div>
 
 </body>

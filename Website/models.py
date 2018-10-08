@@ -15,10 +15,19 @@ class TiposDeServicio(models.Model):
 
 
 class Trabajador(models.Model):
+
+    WEB_DEVELOPER = 1
+    OPTION_2 = 2
+
+    TIPO_SERVICIO = (
+        (WEB_DEVELOPER, 'Desarrollador Web'),
+        (OPTION_2, 'Option 2')
+    )
+
     nombre = models.CharField(max_length=1000)
     apellidos = models.CharField(max_length=1000)
     aniosExperiencia = models.IntegerField()
-    tiposDeServicio = models.ForeignKey(TiposDeServicio, null=True, on_delete=models.PROTECT)
+    tiposDeServicio = models.ForeignKey(TiposDeServicio, null=True, on_delete=models.PROTECT, choices=TIPO_SERVICIO)
     telefono = models.CharField(max_length=1000)
     correo = models.CharField(max_length=1000)
     imagen = models.ImageField(upload_to='photos')

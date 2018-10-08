@@ -20,5 +20,5 @@ from Website import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
-    path('registro', views.registro, name="resgistro")
+    path('registro/', views.registro, name="registro")
 ]
