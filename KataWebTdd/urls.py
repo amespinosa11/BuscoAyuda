@@ -23,5 +23,6 @@ urlpatterns = [
     path('registro/', views.registro, name="registro"),
     path('<int:id>/detalle', views.detalle, name="detalle"),
     path('login', views.login, name="login"),
-    path('logout', views.logout)
+    path('logout', views.logout),
+    path('<int:id>/editar', views.editar, name="editar")
 ]
