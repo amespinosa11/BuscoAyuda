@@ -12,12 +12,18 @@
 </head>
 <body>
 
-<div class="container">
+<form action="/registro/", method="POST">
+    <div class="container">
     {% csrf_token %}
     {{form}}
     {{user_form}}
     <button id="id_grabar" type="submit" class="btn btn-primary">Submit</button>
 
+</div>
+</form>
+
+<div class="container">
+    <span>{{user.username}}</span> 
 </div>
 
 </body>

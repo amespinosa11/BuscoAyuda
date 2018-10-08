@@ -20,5 +20,6 @@ from Website import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name="index"),
-    path('registro/', views.registro, name="registro")
+    path('registro/', views.registro, name="registro"),
+    path('<int:id>/detalle', views.detalle, name="detalle")
 ]

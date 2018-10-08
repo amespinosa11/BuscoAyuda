@@ -10,7 +10,7 @@
             integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
             crossorigin="anonymous"></script>
     <script src="/designMatch/recursos/jquery.bootpag.min.js"></script>
-    <script>
+    <script>  
         var trabajador = localStorage.getItem('trabajador');
 
         (function () {
@@ -49,6 +49,11 @@
     </script>
 </head>
 <body>
+
+<div class="container">
+    <h2 id="nombre_apellido"></h2>
+</div>
+
 <div class="row">
     <div class="col-md-6 col-md-offset-3">
         <div id="nombres" align="center" class="page-header">
@@ -82,5 +87,14 @@
     </div>
     <div id="comentarios" class="row">
 </div>
+
+
+<script>
+        var nombre_trabajador = '{{detalles_trabajador.nombre}}',
+            apellidos_trabajador = '{{detalles_trabajador.apellidos}}',
+            h2 = document.querySelector("#nombre_apellido");
+
+            h2.innerHTML += nombre_trabajador + " " + apellidos_trabajador;
+</script>
 </body>
 </html>

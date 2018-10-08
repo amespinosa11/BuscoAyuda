@@ -53,7 +53,6 @@
         </div>
     {% endfor %}
 {% endif %}
-{% if not user.is_authenticated %}
     <form class="navbar-form navbar-right" role="search">
         <div class="input-group">
             <input  type="text" class="form-control" placeholder="Buscar" name="srch-term" id="buscar">
@@ -64,6 +63,7 @@
     </form>
     <div class="col-lg-12">
     </div>
+
     <div id="trabajadores">
     {% for trabajador in trabajadores %}
         <div class="col-sm-4 col-md-3">
@@ -74,7 +74,7 @@
                     <img src="https://miso4202.s3.amazonaws.com/{{ trabajador.tiposDeServicio.imagen }}" />
                 </div>
                 <div class="panel-body" style="text-align: center">
-                    <a class="trabajador" href="#" data-form="{{ trabajador.id }}" style="text-decoration: none;">
+                    <a class="trabajador" href="{{trabajador.id}}/detalle" data-form="{{ trabajador.id }}" style="text-decoration: none;">
                         <!--suppress HtmlUnknownTarget -->
                         <img class="thumbnail img-responsive center-block"
                              src="https://miso4202.s3.amazonaws.com/{{ trabajador.imagen }}" width="300"
@@ -86,7 +86,6 @@
         </div>
     {% endfor %}
     </div>
-{% else %}
     <div class="container" style="padding: 5px">
         {% if user.is_authenticated and user.is_superuser %}
             <h3>Administrar</h3>
@@ -94,7 +93,7 @@
             <a class="glyphicon glyphicon-exclamation-sign" href="admin" target="_blank"> Abrir</a>
         {% endif %}
     </div>
-{% endif %}
+
 <!--suppress JSUnresolvedFunction -->
 <script>
     $(document).ready(function () {
