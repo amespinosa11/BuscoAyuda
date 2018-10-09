@@ -3,6 +3,7 @@ from .models import *
 from django.contrib import auth
 from django.contrib import messages
 from django.urls import reverse
+from django.views.decorators.csrf import csrf_exempt
 # Create your views here.
 
 def index(request):
@@ -107,3 +108,12 @@ def editar(request,id):
     }   
 
 	return render(request, "editar.html", context)
+
+def add_comment(request):
+	if request.method == 'POST':
+		new_comment = Comentario(texto=request.POST.get('texto'),
+            trabajador=Trabajador.objects.get(pk=request.POST.get('trabajador')),
+            correo=request.POST.get('correo'))
+		new_comment.save()
+	return redirect(reverse('detalle', args=(request.user.id,)))
+    
