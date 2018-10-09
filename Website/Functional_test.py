@@ -117,6 +117,27 @@ class FunctionalTest(unittest.TestCase):
         telefono = self.browser.find_element_by_id('id_telefono')
         self.assertIn('1234567', telefono.text)
 
+    def test_add_comentario(self):
+        self.browser.get('http://localhost:8000')
+        span = self.browser.find_element(By.XPATH, '//span[text()="Juan Daniel Arevalo"]')
+        span.click()
+
+        self.browser.implicitly_wait(5)
+
+        correo = self.browser.find_element_by_id('correo')
+        correo.send_keys('prueba@prueba.com')
+
+        comentario = self.browser.find_element_by_id('comentario')
+        comentario.send_keys('Comentario de Prueba')
+
+        botonAddComment = self.browser.find_element_by_id('id_comentario')
+        botonAddComment.click()
+
+        self.browser.implicitly_wait(2)
+
+        mensaje_exitoso = self.browser.find_element_by_id('mensaje')
+        self.assertIn('Se registró exitosamente su comentario.', mensaje_exitoso.text)
+
 
 if __name__ == '__main__':
     unittest.main()
