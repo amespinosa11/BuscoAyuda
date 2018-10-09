@@ -1,11 +1,20 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from .models import *
+from django.contrib import auth
+from django.contrib import messages
+from django.urls import reverse
 # Create your views here.
 
 def index(request):
 	trabajadores = Trabajador.objects.all()
+	user = ""
+	trabajador = ""
+	if request.user.is_authenticated:
+		user = request.user
+		trabajador = Trabajador.objects.get(usuarioId=user.id)
 	context = {
-		'trabajadores':trabajadores
+		'trabajadores':trabajadores,
+		'trabajador':trabajador
 	}
 	return render(request, "index.html", context)
 
@@ -52,3 +61,29 @@ def detalle(request, id):
 		'detalles_trabajador':detalles_trabajador
 	}
 	return render(request, "detalle.html", context)
+
+def login(request):
+	user_form = UserForm
+	context = {
+		'user_form': user_form
+	}
+
+	if request.method == 'POST':
+	    username = request.POST.get('username')
+	    password = request.POST.get('password')
+	    user = auth.authenticate(username=username, password=password)
+	    if user is not None:
+	        auth.login(request, user)
+	        messages.success(request, "Bienvenido al sistema {}".format(username), extra_tags="alert-success")
+	        return redirect(reverse('index'))
+	    else:
+	        messages.error(request, "¡El usuario o la contraseña son incorrectos!", extra_tags="alert-danger")
+	        return redirect(reverse('index'))
+
+	return render(request, "login.html", context)
+
+
+def logout(request):
+    auth.logout(request)
+    messages.info(request, "Cerraste sesión exitosamente", extra_tags="alert-info")
+    return redirect(reverse('index'))
