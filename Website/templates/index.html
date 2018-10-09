@@ -42,6 +42,7 @@
     <h1>Busco Ayuda</h1>
     {% if user.is_authenticated %}
         <h3 id="id_name"></h3>
+        <a id="id_editar" href="/{{trabajador.id}}/editar">Editar Información</a>
     {% endif %}
     <p>Encuentra aquí la ayuda que necesitas.</p>
 </div>
